@@ -1,20 +1,20 @@
-@import "nulling.scss";
+@import "nulling.css";
 
 .navbar{
   display: flex;
   flex-direction: row;
-  border: 1px solid black;
+border: 1px solid #000;
   justify-content: end;
   align-items: center;
   padding: 10px;
   background-color: black;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  
+  flex-wrap: wrap;
 }
 .navbar .menu{
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+
+  gap: 30px;
   padding-right: 100px;
 
 }
@@ -46,10 +46,111 @@
   background-color: #FB6514;
   border: 1px solid black;
 }
-/* Responsive layout - makes a one column-layout instead of two-column layout */
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
+
+
+.top{
+  background-image: url(../img/benifits_of_weight_lifting_female_in_gym.webp);
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: white;
+  background-color: black;
+
+  text-align: left;
+  padding-bottom: 100px;
+  background-size: cover; /* Опционально, чтобы фон занимал всю область */
+  background-position: center; /* Опционально, для центрирования фона */
+}
+.title{
+ max-width: 600px;
+ text-align: left;
+ margin-left: 50px;
+}
+h2{
+  font-size: 80px;
+
+}
+.subtext{
+  font-size: 20px;
+  max-width: 600px;
+  padding-bottom: 20px;
+  margin-left: 50px;
+
+}
+.inputform{
+margin-left: 50px;
+}
+
+
+.inputform input{
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 330px;
+  height: 30px;
+  font-size: 15px;
+  text-align: center;
+
+}
+
+.active-but{
+  border: 1px solid orangered;
+  width: 200px;
+  height: 35px;
+  border-radius: 15px;
+  color: white;
+  background-color: orangered;
+}
+
+
+
+
+/* Адаптивные стили */
+@media (max-width: 593px) {
+  .navbar {
+display: none;
   }
+
+  .navbar .menu, .navbar .buttons {
+    padding-right: 0;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar .menu a, .navbar .buttons button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .title, .subtext, .inputform {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .subtext{
+    font-size: 15px;
+  }
+
+  .inputform input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .active-but {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 40px; /* Уменьшение размера заголовка для мобильных устройств */
+  }
+}
+
+.supports{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-items: center;
+  align-items: center;
+
+}
+.supports div{
+  display: flex;
+  align-items: center;
 }
 
