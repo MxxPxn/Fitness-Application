@@ -1,6 +1,7 @@
 @import "nulling.css";
 * {
   box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 .navbar{
   display: flex;
@@ -298,7 +299,7 @@ background-repeat: no-repeat;
   color:#f7f4f2;
   
 }
-p{
+.plans-unit p{
   margin-top: 20px;
   font-size: 21px;
   color: #dd6322;
@@ -361,6 +362,119 @@ p{
   top: 15px;
   right:40px;
 }
+
+
+.steps{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  background-color: #000000;
+}
+.steps .steps-title{
+  font-size: 60px;
+  text-align: center;
+}
+
+.training-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  margin-top: 30px;
+  max-width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  border: 1px solid #000;
+  background-color: #212121;
+  color: #f7f4f2;
+  border-radius: 80px;
+}
+.image-container img{
+  border-radius: 20px;
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  margin-right: 50px;
+  object-fit: cover;
+
+}
+.text-container{
+  max-width: 50%;
+  flex: 1;
+}
+.text-container h1{
+  font-size: 61px;
+  margin-bottom: 20px;
+
+}
+.text-container p{
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+.stats{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.stat h2{
+  font-size: 62px;
+  margin: 0px;
+}
+.stat span{
+  color: #dd6322;
+}
+.stat p{
+  font-size: 20px;
+  margin: 0;
+}
+.start-button{
+  padding: 15px 30px;
+  background-color: #ff5722;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+
+}
+.start-button:hover{
+  background-color: #e64a19;
+}
+.steps-body2 .text-container{
+  text-align: center;
+}
+.steps-body2 ul li{
+  position: relative;
+  text-align: center;
+  font-size: 27px;
+  font-weight: bold;
+  
+}.steps-body2 ul li h3{
+  margin-top: 60px;
+  
+}
+
+
+.steps-body2 ul li p{
+  font-size: 21px;
+  font-weight: normal;
+  box-sizing: border-box;  
+}
+.steps-body2 ul li ::before{
+  content: url("../icons/checkmark-in-circle.svg");
+  position: absolute;
+  top: 5px;
+  left: -90px;
+  align-items: center; 
+
+ 
+}
+.steps-body2 .image-container img{
+ max-height: 650px;
+}
+
 
 
 
