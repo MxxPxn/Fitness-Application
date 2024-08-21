@@ -231,7 +231,7 @@ padding-bottom: 20px;
   color: #f7f4f2;
   padding: 15px 50px;
   box-sizing: border-box;
-  margin-left: 20px;
+  margin-left: 10px;
   font-size: 16px;
 }
 .grid-category button:hover{
@@ -269,6 +269,11 @@ padding-bottom: 20px;
 
   .grid-category p {
     font-size: 14px;
+  }
+  .grid-body button{
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
   }
 }
 
