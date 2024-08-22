@@ -1,6 +1,47 @@
 @import "nulling.css";
 
 
+* {
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.column{
+    max-width: 25%;
+    padding: 0 4px;
+    width: 35%;
+    height: 250px;
+}
 
+.column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    transition: transform 0.5s;
+}
+.column img:hover{
+    transform: scale(1.1);
+}
 
-
+@media screen and (max-width: 400px) {
+    .column {
+      flex: 20%;
+      max-width: 20%;
+    }
+  }
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
